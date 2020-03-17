@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+            crossorigin="anonymous"
+        />
+
+        <!--Fonts-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/ddebb5f2a9.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/Logo1.PNG" alt="" />
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#services" class="nav-link"
+                            >My Services</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#work" class="nav-link">My Work</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Intro-->
+        <section class="intro">
+            <h1 class="section-title section-title-intro">
+                Software Architecture <strong>Lab</strong>
+            </h1>
+            <p class="section-subtitle section-subtitle-intro">
+                Design Patterns
+            </p>
+            <img
+                src="Images/Copy of SE471-Lab4MyVersion.jpeg"
+                alt=""
+                class="intro-img"
+            />
+        </section>
+
+        <div class="portfolio-item-indiv">
+            <p>
+                <h3>Problem:</h3>
+                A video game has three modes: beginner, intermediate
+                and advanced. For each mode chosen by a player, the game GUI
+                shows two control objects: a character selection panel and a
+                weapon selection panel. Note that (a) under different modes the
+                system displays different character selection panels and weapon
+                selection panels, and (b) it is possible that new modes and/or
+                new control objects may be added in the future. 
+                <ol>
+                    <li>
+                        Apply a design pattern to design the system such that the model can be
+                        easily extended to cover future changes without affecting the
+                        code on the client side. You should use a UML class diagram to
+                        document your design.</li>
+                    <li>
+                        Write Java code to implement your
+                        design. You should have a simple test class to show how it
+                        works.
+
+
+                    </li>
+                </ol>
+
+                <h3
+                >Solution:</h3>
+                I chose to use the abstract factory design pattern for this assignment. This allows the client to create a product from a set of components, while allowing the concrete classes to be modified and not affecting the client at all. It also allows the addition of additional components to be added seamlessly. 
+
+            </p>
+            <img src="Images/Copy of SE471-Lab4MyVersion.jpeg" alt="" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam rerum, ratione totam obcaecati sapiente dolorum
+                possimus ut exercitationem, illo eius eum sint, nam animi
+                voluptatem dolores aut maiores delectus. Nulla!
+            </p>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:sghuste@gmail.com" class="footer-link"
+                >sghuste@gmail.com</a
+            >
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a
+                        href="https://github.com/EpsilonOne"
+                        target="_blank"
+                        class="social-list-link"
+                    >
+                        <i class="fab fa-github"></i
+                    ></a>
+                </li>
+
+                <li class="social-list-item">
+                    <a
+                        href="https://www.linkedin.com/in/shane-ghuste-b9266518b/"
+                        target="_blank"
+                        class="social-list-link"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                </li>
+            </ul>
+        </footer>
+
+        <div class="logo">
+            <img src="images/LOGO.PNG" alt="" />
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
